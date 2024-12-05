@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>CONDITIONS</h1>
+    {% if age > 100 %}
+    <h1>{{age}}</h1>
+    {% endif %}
+    
+                
+<h1>IF-ELSE</h1>  
+{% if age < 18 %}
+<h1>teenage</h1>
+{% else %}
+<h1>youth</h1>
+{% endif %} 
+
+
+<h1>IF-ELIF</h1>
+{% if age < 16 %}
+<h1>child marriage</h1>
+{% elif age > 18 and age < 30 %}
+<h1>legal marriage</h1>
+{% elif age > 31 and age < 45 %}
+<h1>Actual marriage</h1>
+{% else %}
+<h1>Best Time to marry</h1>
+{% endif %}
+
+
+<h1>NESTED</h1>
+{% if age < 50 %}
+ {% if age < 30 %}
+   <h1>marry</h1>
+   {% else %}
+   <h1>good time</h1>
+   {% endif %}
+{% else %}
+<h1>best time</h1>
+{% endif %} 
+
+
+
+        
+<h1>forloop</h1>
+{% for i in name %}
+<h1>{{i}}</h1>
+{% endfor %} 
+
+
+     
+</body>
+</html>
